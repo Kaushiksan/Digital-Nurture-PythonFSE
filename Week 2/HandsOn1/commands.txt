@@ -1,0 +1,19 @@
+# Install Django
+
+pip install django
+
+# Create Project
+
+django-admin startproject coursemanager
+
+# Move into Project
+
+cd coursemanager
+
+# Create App
+
+python manage.py startapp courses
+
+# Run Server
+
+python manage.py runserver
