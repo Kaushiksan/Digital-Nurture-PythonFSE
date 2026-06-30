@@ -1,0 +1,15 @@
+settings.py
+-------------
+Stores project configuration.
+
+urls.py
+--------
+Defines URL routing.
+
+wsgi.py
+--------
+Entry point for WSGI servers.
+
+asgi.py
+--------
+Entry point for ASGI servers.
