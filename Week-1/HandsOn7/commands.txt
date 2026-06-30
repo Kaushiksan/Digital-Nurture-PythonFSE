@@ -1,0 +1,35 @@
+# Install Alembic
+pip install alembic
+
+# Initialize Alembic
+alembic init migrations
+
+# Configure alembic.ini
+# Set sqlalchemy.url
+
+# Generate Initial Migration
+alembic revision --autogenerate -m "initial schema"
+
+# Apply Migration
+alembic upgrade head
+
+# Check Current Version
+alembic current
+
+# Add New Column (is_active)
+alembic revision --autogenerate -m "add is_active"
+
+# Apply Migration
+alembic upgrade head
+
+# View Migration History
+alembic history --verbose
+
+# Rollback One Migration
+alembic downgrade -1
+
+# Rollback All Migrations
+alembic downgrade base
+
+# Upgrade Again
+alembic upgrade head
