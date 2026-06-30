@@ -1,0 +1,15 @@
+# Create Migrations
+
+python manage.py makemigrations
+
+# Apply Migrations
+
+python manage.py migrate
+
+# Create Superuser
+
+python manage.py createsuperuser
+
+# Open Django Shell
+
+python manage.py shell
