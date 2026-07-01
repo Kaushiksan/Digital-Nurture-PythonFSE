@@ -1,2 +1,3 @@
-Django
-djangorestframework
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
