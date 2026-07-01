@@ -1,0 +1,48 @@
+# Open Django Shell
+
+python manage.py shell
+
+# Import Models
+
+from courses.models import *
+
+# View All Courses
+
+Course.objects.all()
+
+# View All Students
+
+Student.objects.all()
+
+# Create Course
+
+Course.objects.create(
+course_name="Database Management System",
+course_code="CS102",
+credits=4
+)
+
+# Create Student
+
+Student.objects.create(
+first_name="Rahul",
+last_name="Sharma",
+email="rahul@gmail.com",
+enrollment_year=2023
+)
+
+# Filter Records
+
+Course.objects.filter(course_code="CS102")
+
+Course.objects.filter(credits=4)
+
+# Count Records
+
+Course.objects.count()
+
+Student.objects.count()
+
+Enrollment.objects.count()
+
+exit()
