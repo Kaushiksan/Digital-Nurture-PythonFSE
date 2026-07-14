@@ -6,6 +6,8 @@ from extensions import db, migrate
 
 from courses import courses_bp
 
+from courses import models
+
 
 def create_app():
 
