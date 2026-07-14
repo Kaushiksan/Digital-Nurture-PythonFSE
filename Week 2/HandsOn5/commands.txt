@@ -1,0 +1,28 @@
+# Install Dependencies
+
+pip install -r requirements.txt
+
+
+# Set Flask Application
+
+flask --app app.py db init
+
+
+# Create Migration
+
+flask --app app.py db migrate -m "initial schema"
+
+
+# Apply Migration
+
+flask --app app.py db upgrade
+
+
+# Open Flask Shell
+
+flask --app app.py shell
+
+
+# Run Application
+
+flask --app app.py run
