@@ -1,0 +1,303 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.site-title {
+    font-size: 2rem;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+#hero {
+    min-height: 35vh;
+    padding: 60px 20px;
+
+    background-color: #e8eef5;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+
+/* =========================================
+   COURSES
+========================================= */
+
+#courses {
+    padding: 50px 40px;
+}
+
+
+#courses > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+
+/* =========================================
+   COURSE CONTROLS
+========================================= */
+
+.course-controls {
+    max-width: 900px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    gap: 15px;
+}
+
+
+#search-courses {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+
+
+#search-courses:focus {
+    outline: 2px solid #1e3a5f;
+}
+
+
+#sort-credits {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #1e3a5f;
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+#sort-credits:hover {
+    background-color: #315b87;
+}
+
+
+/* =========================================
+   COURSE GRID
+========================================= */
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   COURSE CARD
+========================================= */
+
+.course-card {
+    min-height: 200px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 8px
+        rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.course-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 16px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.course-card h3 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+
+.course-card p {
+    margin-bottom: 20px;
+}
+
+
+.course-card span {
+    font-weight: bold;
+    color: #555555;
+}
+
+
+/* =========================================
+   TOTAL CREDITS
+========================================= */
+
+#total-credits {
+    margin-top: 30px;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    color: #1e3a5f;
+}
+
+
+/* =========================================
+   SELECTED COURSE
+========================================= */
+
+#selected-course {
+    max-width: 700px;
+
+    margin: 25px auto 0;
+    padding: 20px;
+
+    background-color: #e8eef5;
+
+    border-left: 5px solid #1e3a5f;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #courses {
+        padding: 40px 20px;
+    }
+
+
+    .course-controls {
+        flex-direction: column;
+    }
+
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+}
