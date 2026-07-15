@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Portal API Integration</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header>
+
+        <h1>
+            Student Portal
+        </h1>
+
+        <nav>
+
+            <a href="#courses">
+                Courses
+            </a>
+
+            <a href="#notifications">
+                Notifications
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main>
+
+        <!-- =================================
+             HERO
+        ================================== -->
+
+        <section id="hero">
+
+            <h2>
+                Student Dashboard
+            </h2>
+
+            <p>
+                Courses and notifications are
+                loaded asynchronously.
+            </p>
+
+        </section>
+
+
+        <!-- =================================
+             COURSES
+        ================================== -->
+
+        <section id="courses">
+
+            <h2>
+                My Courses
+            </h2>
+
+            <div id="course-status">
+
+                Loading courses...
+
+            </div>
+
+            <div class="course-grid">
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             NOTIFICATIONS
+        ================================== -->
+
+        <section id="notifications">
+
+            <h2>
+                Notifications
+            </h2>
+
+            <div
+                id="notification-loading"
+                class="loading-spinner"
+            >
+
+            </div>
+
+            <p id="notification-status">
+
+            </p>
+
+            <div class="notification-grid">
+
+            </div>
+
+            <button
+                type="button"
+                id="retry-button"
+                hidden
+            >
+                Retry
+            </button>
+
+        </section>
+
+
+        <!-- =================================
+             API ERROR DEMONSTRATION
+        ================================== -->
+
+        <section id="api-error-demo">
+
+            <h2>
+                API Error Handling Demo
+            </h2>
+
+            <p id="error-message">
+
+            </p>
+
+            <button
+                type="button"
+                id="error-retry-button"
+                hidden
+            >
+                Retry
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Student Portal
+        </p>
+
+    </footer>
+
+
+    <!-- AXIOS CDN -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+
+
+    <!-- APPLICATION MODULE -->
+
+    <script
+        type="module"
+        src="app.js"
+    ></script>
+
+</body>
+
+</html>
