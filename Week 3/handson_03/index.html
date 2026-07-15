@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Portal</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header>
+
+        <h1 class="site-title">
+            Student Portal
+        </h1>
+
+        <nav>
+
+            <a href="#hero">
+                Home
+            </a>
+
+            <a href="#courses">
+                Courses
+            </a>
+
+            <a href="#profile">
+                Profile
+            </a>
+
+            <a href="#grades">
+                Grades
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================
+         MAIN
+    ====================================== -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section id="hero">
+
+            <h2>
+                Welcome to the Student Portal
+            </h2>
+
+            <p>
+                Search, sort and explore
+                your enrolled courses.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================
+             COURSES SECTION
+        ====================================== -->
+
+        <section id="courses">
+
+            <h2>
+                My Courses
+            </h2>
+
+
+            <!-- COURSE CONTROLS -->
+
+            <div class="course-controls">
+
+                <input
+                    type="text"
+                    id="search-courses"
+                    placeholder="Search courses..."
+                >
+
+                <button
+                    type="button"
+                    id="sort-credits"
+                >
+                    Sort by Credits
+                </button>
+
+            </div>
+
+
+            <!-- DYNAMIC COURSE GRID -->
+
+            <div class="course-grid">
+
+            </div>
+
+
+            <!-- TOTAL CREDITS -->
+
+            <p id="total-credits">
+
+            </p>
+
+
+            <!-- SELECTED COURSE -->
+
+            <div id="selected-course">
+
+                Click a course card to view details.
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Student Portal.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ES6 MODULE -->
+
+    <script
+        type="module"
+        src="app.js"
+    ></script>
+
+</body>
+
+</html>
