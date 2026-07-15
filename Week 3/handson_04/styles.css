@@ -1,0 +1,295 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+#hero {
+    min-height: 35vh;
+
+    padding: 60px 20px;
+
+    background-color: #e8eef5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+}
+
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+#courses,
+#notifications,
+#api-error-demo {
+    padding: 50px 40px;
+}
+
+
+#courses > h2,
+#notifications > h2,
+#api-error-demo > h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #1e3a5f;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+#course-status,
+#notification-status,
+#error-message {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   COURSE GRID
+========================================= */
+
+.course-grid,
+.notification-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.course-card,
+.notification-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 8px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+.course-card h3,
+.notification-card h3 {
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+}
+
+
+.course-card p,
+.notification-card p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   NOTIFICATIONS
+========================================= */
+
+#notifications {
+    background-color: #e8eef5;
+}
+
+
+/* =========================================
+   LOADING SPINNER
+========================================= */
+
+.loading-spinner {
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 20px auto;
+
+    border: 5px solid #dddddd;
+
+    border-top:
+        5px solid #1e3a5f;
+
+    border-radius: 50%;
+
+    animation:
+        spin 1s linear infinite;
+}
+
+
+.loading-spinner.show {
+    display: block;
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+#retry-button,
+#error-retry-button {
+    display: block;
+
+    margin: 20px auto;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #1e3a5f;
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+
+#retry-button:hover,
+#error-retry-button:hover {
+    background-color: #315b87;
+}
+
+
+#retry-button[hidden],
+#error-retry-button[hidden] {
+    display: none;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 15px;
+    }
+
+
+    #courses,
+    #notifications,
+    #api-error-demo {
+        padding: 40px 20px;
+    }
+
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+}
