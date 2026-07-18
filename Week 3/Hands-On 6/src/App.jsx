@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
+import CourseDetails from "./pages/CourseDetails";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,11 @@ function App() {
                     <Route
                         path="/courses"
                         element={<Courses />}
+                    />
+
+                    <Route
+                        path="/courses/:id"
+                        element={<CourseDetails />}
                     />
 
                     <Route
