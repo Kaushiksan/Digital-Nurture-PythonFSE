@@ -1,4 +1,12 @@
+import { useContext } from "react";
+
+import { CourseContext } from "../context/CourseContext";
+
+import CourseCard from "../components/CourseCard";
+
 function Courses() {
+
+    const { courseList } = useContext(CourseContext);
 
     return (
 
@@ -6,11 +14,25 @@ function Courses() {
 
             <h2>Courses</h2>
 
-            <p>
+            <div className="course-grid">
 
-                Available Courses will be displayed here.
+                {
 
-            </p>
+                    courseList.map(course => (
+
+                        <CourseCard
+
+                            key={course.id}
+
+                            course={course}
+
+                        />
+
+                    ))
+
+                }
+
+            </div>
 
         </section>
 
