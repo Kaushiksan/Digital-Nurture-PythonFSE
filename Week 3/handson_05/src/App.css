@@ -1,0 +1,312 @@
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background-color: #1e3a5f;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.enrolled-count {
+    background-color: white;
+    color: #1e3a5f;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 35vh;
+
+    background-color: #e8eef5;
+
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+
+/* =========================================
+   COURSES
+========================================= */
+
+.courses-section {
+    padding: 50px 40px;
+}
+
+
+.courses-section > h2 {
+    text-align: center;
+
+    color: #1e3a5f;
+
+    margin-bottom: 25px;
+}
+
+
+.search-input {
+    display: block;
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   COURSE CARD
+========================================= */
+
+.course-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 8px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+.course-card h3 {
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+
+    text-transform: capitalize;
+}
+
+
+.course-card p {
+    margin-bottom: 10px;
+}
+
+
+.course-card button {
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #1e3a5f;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+.course-card button:hover {
+    background-color: #315b87;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status-message {
+    text-align: center;
+
+    font-weight: bold;
+
+    margin: 30px;
+}
+
+
+.error-message {
+    text-align: center;
+
+    color: #b00020;
+
+    font-weight: bold;
+
+    margin: 30px;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-section {
+    background-color: #e8eef5;
+
+    padding: 50px 40px;
+}
+
+
+.profile-section > h2 {
+    text-align: center;
+
+    color: #1e3a5f;
+
+    margin-bottom: 30px;
+}
+
+
+.profile-form {
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.profile-form label {
+    font-weight: bold;
+}
+
+
+.profile-form input {
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
+
+
+.profile-preview {
+    max-width: 600px;
+
+    margin: 30px auto 0;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    border-left:
+        5px solid #1e3a5f;
+}
+
+
+.profile-preview h3 {
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #1e3a5f;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .header {
+        flex-direction: column;
+
+        padding: 20px;
+
+        text-align: center;
+    }
+
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .courses-section,
+    .profile-section {
+        padding: 40px 20px;
+    }
+
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+}
