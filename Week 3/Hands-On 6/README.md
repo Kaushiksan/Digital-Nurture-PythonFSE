@@ -1,43 +1,27 @@
-# Hands-On 6
+# React Hands-On 6
 
-## React Routing & State Management
+## Concepts Covered
 
-### Technologies
-
-- React
-- Vite
 - React Router DOM
-
-### Topics Covered
-
 - BrowserRouter
-- Routes
-- Route
-- Navigation
+- Routes and Route
+- Navigation using NavLink
 - Dynamic Routing
 - Route Parameters
-- Context API
 - Protected Routes
-- State Management
+- React Context API
+- Reusable Components
 
-### Run
+## Pages
+
+- Home
+- Courses
+- Course Details
+- Profile
+- Not Found
+
+## Run the Project
 
 ```bash
 npm install
-npm install react-router-dom
 npm run dev
-```
-
-### Folder Structure
-
-```
-src
- ├── components
- ├── context
- ├── data
- ├── pages
- ├── App.jsx
- ├── App.css
- ├── index.css
- └── main.jsx
-```
