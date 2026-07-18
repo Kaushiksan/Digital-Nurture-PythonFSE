@@ -1,21 +1,21 @@
-function Home() {
+function Profile() {
 
     return (
 
-        <section className="page">
+        <div className="page">
 
-            <h2>Home</h2>
+            <h2>Student Profile</h2>
 
-            <p>
+            <p>Name : John Doe</p>
 
-                Welcome to the Student Portal.
+            <p>Department : Computer Science</p>
 
-            </p>
+            <p>Semester : 6</p>
 
-        </section>
+        </div>
 
     );
 
 }
 
-export default Home;
+export default Profile;
