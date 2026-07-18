@@ -1,10 +1,9 @@
 import React from "react";
-
 import ReactDOM from "react-dom/client";
-
 import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import CourseProvider from "./context/CourseContext";
 
 import "./index.css";
 
@@ -16,7 +15,11 @@ ReactDOM.createRoot(
 
         <BrowserRouter>
 
-            <App />
+            <CourseProvider>
+
+                <App />
+
+            </CourseProvider>
 
         </BrowserRouter>
 
