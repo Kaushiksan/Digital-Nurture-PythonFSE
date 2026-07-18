@@ -1,0 +1,142 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Layout */
+
+main {
+    min-height: 80vh;
+    padding: 30px;
+    background: #f4f6f9;
+}
+
+/* Header */
+
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 18px 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a.active {
+    border-bottom: 3px solid #ffd54f;
+}
+
+/* Footer */
+
+.footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Pages */
+
+.page {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.page h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* Course Grid */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+}
+
+/* Course Card */
+
+.course-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.course-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin-bottom: 8px;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    background: #1e3a8a;
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.course-card a:hover {
+    background: #102c70;
+}
+
+/* Responsive */
+
+@media (max-width:768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+}
