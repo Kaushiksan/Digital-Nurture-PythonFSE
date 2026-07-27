@@ -1,33 +1,24 @@
-# Hands-On 5 – Selenium Locators & Explicit Waits
+# Hands-On 5
 
-## Objective
+## Topics Covered
 
-Learn how to locate web elements and synchronize browser actions using Explicit Waits.
-
-## Install
-
-```bash
-pip install selenium
-```
+- ID Locator
+- Name Locator
+- Class Name
+- Tag Name
+- XPath
+- CSS Selector
+- Checkbox Demo
+- Locator Ranking
 
 ## Run
 
 ```bash
-python locators_waits.py
+python locators.py
 ```
-
-## Concepts Covered
-
-- WebDriver
-- Locators
-- Explicit Wait
-- Assertions
-- Exception Handling
 
 ## Expected Output
 
-- Selenium website opens
-- Downloads page opens
-- Page title verified
-- Heading displayed
-- Browser closes successfully
+- All locator strategies executed successfully
+- CSS selectors verified
+- Checkbox labels located
