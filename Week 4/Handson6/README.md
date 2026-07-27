@@ -1,8 +1,13 @@
-# Hands-On 6 – Selenium with pytest
+# Hands-On 6
 
-## Objective
+## Topics Covered
 
-Integrate Selenium WebDriver with pytest using fixtures.
+- pytest
+- Fixtures
+- Parameterized Tests
+- HTML Reports
+- Screenshot on Failure
+- Selenium WebDriver
 
 ## Install
 
@@ -10,25 +15,22 @@ Integrate Selenium WebDriver with pytest using fixtures.
 pip install -r requirements.txt
 ```
 
-## Run
+## Run Tests
 
 ```bash
-pytest -v
+pytest
 ```
 
-## Expected Result
+## Generate HTML Report
 
-- Browser launches
-- Selenium homepage opens
-- Page title is verified
-- Downloads link is found
-- Test passes
-- Browser closes automatically
+```bash
+pytest --html=report.html --self-contained-html
+```
 
-## Concepts Covered
+## Expected Output
 
-- pytest
-- Fixtures
-- Assertions
-- Selenium WebDriver
-- Explicit Waits
+- 3 Simple Form tests (parameterized)
+- Checkbox test
+- Dropdown test
+- HTML report generated
+- Screenshot captured on failure
