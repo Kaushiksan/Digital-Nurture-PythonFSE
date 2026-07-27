@@ -1,8 +1,18 @@
-# Hands-On 4 – Selenium WebDriver Setup
+# Hands-On 4
 
-## Objective
+## Topics Covered
 
-Set up Selenium WebDriver using Python and webdriver-manager.
+- Selenium Architecture
+- webdriver-manager
+- Chrome WebDriver
+- Implicit Wait
+- Headless Mode
+- Navigation Commands
+- Browser History
+- Multiple Tabs
+- Window Switching
+- Screenshots
+- Window Size Handling
 
 ## Install
 
@@ -10,24 +20,24 @@ Set up Selenium WebDriver using Python and webdriver-manager.
 pip install -r requirements.txt
 ```
 
-## Run
+## Run Setup
 
 ```bash
 python setup_test.py
 ```
 
-## Topics Covered
+## Run Navigation
 
-- Selenium WebDriver
-- Selenium Grid
-- Selenium IDE
-- webdriver-manager
-- Implicit Wait
-- Headless Mode
+```bash
+python navigation_test.py
+```
 
-## Expected Output
+## Output
 
-- Chrome launches
-- LambdaTest Selenium Playground opens
-- Page title is displayed
-- Browser closes successfully
+- Opens LambdaTest Selenium Playground
+- Opens Simple Form Demo
+- Verifies URL
+- Opens Google in a new tab
+- Switches between tabs
+- Saves screenshot
+- Changes browser window size
