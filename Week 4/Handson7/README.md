@@ -1,8 +1,12 @@
-# Hands-On 7 – Page Object Model (POM)
+# Hands-On 7 – Page Object Model
 
-## Objective
+## Topics Covered
 
-Implement Selenium automation using the Page Object Model design pattern.
+- Base Page
+- Page Object Model
+- Reusable Page Classes
+- pytest
+- Selenium WebDriver
 
 ## Install
 
@@ -13,40 +17,18 @@ pip install -r requirements.txt
 ## Run
 
 ```bash
-pytest -v
+pytest tests/ -v
 ```
 
-## Project Structure
+## Generate HTML Report
 
+```bash
+pytest tests/ --html=report.html --self-contained-html
 ```
-HandsOn7/
-│
-├── pages/
-│   └── home_page.py
-│
-├── tests/
-│   └── test_home.py
-│
-├── conftest.py
-├── requirements.txt
-└── README.md
-```
-
-## Concepts Covered
-
-- Selenium WebDriver
-- Page Object Model
-- pytest
-- Fixtures
-- Explicit Wait
-- Assertions
 
 ## Expected Output
 
-- Browser launches
-- Selenium homepage opens
-- Title verified
-- Heading displayed
-- Downloads page opened
-- Test passes
-- Browser closes automatically
+- All tests pass
+- No `driver.find_element()` calls in test files
+- Reusable page classes
+- Clean Page Object Model structure
