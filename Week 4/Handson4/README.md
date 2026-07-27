@@ -1,18 +1,13 @@
 # Hands-On 4 – Selenium WebDriver Setup
 
 ## Objective
-Learn how to configure Selenium WebDriver and launch a browser using Python.
 
-## Prerequisites
+Set up Selenium WebDriver using Python and webdriver-manager.
 
-- Python 3.10+
-- Google Chrome
-- Selenium
-
-## Install Selenium
+## Install
 
 ```bash
-pip install selenium
+pip install -r requirements.txt
 ```
 
 ## Run
@@ -21,18 +16,18 @@ pip install selenium
 python setup_test.py
 ```
 
-## Expected Output
-
-- Chrome browser opens
-- Selenium website loads
-- Page title is displayed
-- Title verification passes
-- Browser closes successfully
-
-## Concepts Covered
+## Topics Covered
 
 - Selenium WebDriver
-- Browser Automation
-- Assertions
-- Element Location
-- Browser Cleanup
+- Selenium Grid
+- Selenium IDE
+- webdriver-manager
+- Implicit Wait
+- Headless Mode
+
+## Expected Output
+
+- Chrome launches
+- LambdaTest Selenium Playground opens
+- Page title is displayed
+- Browser closes successfully
