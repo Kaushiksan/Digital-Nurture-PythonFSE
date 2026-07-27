@@ -2,23 +2,37 @@
 
 ## Topics Covered
 
-- ID Locator
-- Name Locator
-- Class Name
-- Tag Name
+- Selenium Locator Strategies
+- CSS Selectors
 - XPath
-- CSS Selector
-- Checkbox Demo
-- Locator Ranking
+- Explicit Wait
+- FluentWait
+- Bootstrap Alerts
+- Expected Conditions
+- time.sleep() vs Explicit Wait
 
-## Run
+## Install
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Locator Examples
 
 ```bash
 python locators.py
 ```
 
+## Run Wait Examples
+
+```bash
+python waits.py
+```
+
 ## Expected Output
 
-- All locator strategies executed successfully
-- CSS selectors verified
-- Checkbox labels located
+- Bootstrap Alert appears
+- Success message verified
+- Explicit Wait comparison displayed
+- Clickable vs Visible demonstrated
+- FluentWait executes successfully
